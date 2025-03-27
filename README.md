@@ -157,3 +157,7 @@ docker run -d --rm -p 27018:27017 --name mongo10 --network mongoClusterTrabalho 
 
 
 Após a restauração, o nó voltará a fazer parte do cluster automaticamente.
+
+Digitar o comando abaixo para verificar o estado do cluster:
+
+docker exec -it mongo20 mongosh --eval "rs.status()"
